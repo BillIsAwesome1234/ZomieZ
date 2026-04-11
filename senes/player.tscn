@@ -66,3 +66,4 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 script = ExtResource("4_6m1vv")
 max_offset = 50.0
+deadzone_radius = 150.0
