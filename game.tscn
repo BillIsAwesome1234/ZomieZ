@@ -1,8 +1,29 @@
 [gd_scene format=3 uid="uid://cbo5bo7caywkk"]
 
 [ext_resource type="PackedScene" uid="uid://ct6luj7r8ioi7" path="res://player.tscn" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://ewvbyfyvq8tx" path="res://assets/sprite fram test-Sheet.png" id="2_e2o6t"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
+texture = ExtResource("2_e2o6t")
+1:1/size_in_atlas = Vector2i(2, 2)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.885827, -15.408136, 15.2340355, -15.408136, 14.885826, 15.582241, -15.234034, 15.2340355)
+5:1/size_in_atlas = Vector2i(2, 2)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.885827, -15.408136, 15.2340355, -15.408136, 14.885826, 15.582241, -15.234034, 15.2340355)
+9:1/size_in_atlas = Vector2i(2, 2)
+9:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_fc0e3"]
+physics_layer_0/collision_layer = 1
+sources/2 = SubResource("TileSetAtlasSource_feb5d")
 
 [node name="game" type="Node2D" unique_id=1365902165]
 
 [node name="player" parent="." unique_id=383426920 instance=ExtResource("1_80nbo")]
 position = Vector2(519, 140)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=894693141]
+tile_set = SubResource("TileSet_fc0e3")
+format = 2
+layer_0/tile_data = PackedInt32Array(65537, 65538, 1, 131071, 65538, 1, 131069, 65538, 1, 65539, 65538, 1, 65541, 65538, 1, 65543, 65538, 1, 65545, 65538, 1, 65547, 65538, 1, 65549, 65538, 1, 131067, 65538, 1, -65527, 327682, 1, -65525, 327682, 1, -3, 589826, 1, -5, 589826, 1, -1, 589826, 1, -65535, 589826, 1, -65533, 589826, 1, -65531, 589826, 1, -65529, 589826, 1, -131077, 589826, 1, -131075, 589826, 1, -131073, 589826, 1, -196607, 589826, 1, -196605, 589826, 1, -196603, 589826, 1, -196601, 589826, 1, -196599, 589826, 1, -196597, 589826, 1, -65523, 589826, 1, -196595, 589826, 1)
