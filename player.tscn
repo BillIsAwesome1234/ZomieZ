@@ -28,12 +28,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 60.0
 }]
 
 [node name="player" type="AnimatedSprite2D" unique_id=383426920]
 sprite_frames = SubResource("SpriteFrames_sweqy")
-frame_progress = 0.58941054
+frame = 1
+frame_progress = 0.39471743
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1999474978]
 
