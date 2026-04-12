@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ichiq648lfsq"]
+
+[ext_resource type="Texture2D" uid="uid://ipcmevonufya" path="res://assets/gun.png" id="1_wtcfe"]
+
+[node name="gun" type="AnimatableBody2D" unique_id=747257810]
+
+[node name="Gun" type="Sprite2D" parent="." unique_id=229348699]
+position = Vector2(412, 210)
+texture = ExtResource("1_wtcfe")
