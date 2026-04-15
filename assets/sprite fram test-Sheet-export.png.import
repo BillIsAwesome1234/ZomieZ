@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2tawwg5tftng"
-path="res://.godot/imported/sprite fram test-Sheet.png-9c5d9e1c5b75a4b026ea03a664e2f52e.ctex"
+uid="uid://djc3q080ge6y7"
+path="res://.godot/imported/sprite fram test-Sheet-export.png-310b4be93c330840d954659d14ab89f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite fram test-Sheet.png"
-dest_files=["res://.godot/imported/sprite fram test-Sheet.png-9c5d9e1c5b75a4b026ea03a664e2f52e.ctex"]
+source_file="res://assets/sprite fram test-Sheet-export.png"
+dest_files=["res://.godot/imported/sprite fram test-Sheet-export.png-310b4be93c330840d954659d14ab89f1.ctex"]
 
 [params]
 

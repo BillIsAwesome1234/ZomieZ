@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2tawwg5tftng"
-path="res://.godot/imported/sprite fram test-Sheet.png-9c5d9e1c5b75a4b026ea03a664e2f52e.ctex"
+uid="uid://bc6oujuc3gdk7"
+path="res://.godot/imported/gun-Sheet-export.png-db751bd9026ee2d84dc8534f17e3793a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprite fram test-Sheet.png"
-dest_files=["res://.godot/imported/sprite fram test-Sheet.png-9c5d9e1c5b75a4b026ea03a664e2f52e.ctex"]
+source_file="res://assets/gun-Sheet-export.png"
+dest_files=["res://.godot/imported/gun-Sheet-export.png-db751bd9026ee2d84dc8534f17e3793a.ctex"]
 
 [params]
 
