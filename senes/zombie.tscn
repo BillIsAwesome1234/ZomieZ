@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cqqqgxbfd2vm6"]
+
+[node name="zombie" type="CharacterBody2D" unique_id=835914792]
