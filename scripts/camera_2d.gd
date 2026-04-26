@@ -3,6 +3,7 @@ extends Camera2D
 @export var max_offset := 50.0
 @export var smoothing := 5.0
 @export var deadzone_radius := 150.0
+@export var min_y_offset := 0.0
 
 func _process(delta):
 	var screen_center = get_viewport_rect().size * 0.5
@@ -23,5 +24,9 @@ func _process(delta):
 	
 	# Smooth movement
 	offset = lerp(self.offset, offset, smoothing * delta)
+	
+	if offset.y > min_y_offset:
+		offset.y = min_y_offset
+	
 	
 	self.offset = offset
