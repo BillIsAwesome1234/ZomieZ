@@ -61,6 +61,10 @@ animations = [{
 
 [node name="gun" type="AnimatedSprite2D" unique_id=1521681469]
 sprite_frames = SubResource("SpriteFrames_pr6x7")
-animation = &"idle"
+animation = &"shoot"
 autoplay = "idle"
+frame = 4
+frame_progress = 0.62598157
 script = ExtResource("3_2gu6j")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=976277007]

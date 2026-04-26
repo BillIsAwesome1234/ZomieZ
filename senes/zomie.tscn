@@ -1,4 +1,50 @@
 [gd_scene format=3 uid="uid://cgsik7h4gpwss"]
 
-[node name="Node2D" type="Node2D" unique_id=1125551400]
+[ext_resource type="Texture2D" uid="uid://due7u0xqsoc64" path="res://assets/zombie.png" id="1_8vvai"]
+[ext_resource type="Script" uid="uid://cirn8n2f8y6c5" path="res://scripts/zomie.gd" id="1_18awr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18awr"]
+atlas = ExtResource("1_8vvai")
+region = Rect2(0, 0, 84, 95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp005"]
+atlas = ExtResource("1_8vvai")
+region = Rect2(84, 0, 84, 95)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ej858"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18awr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp005")
+}],
+"loop": true,
+"name": &"shamble",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hu15b"]
+radius = 12.989212
+height = 65.99976
+
+[node name="zomie" type="CharacterBody2D" unique_id=1188448778]
 rotation = 0.0026852489
+script = ExtResource("1_18awr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2012252642]
+sprite_frames = SubResource("SpriteFrames_ej858")
+animation = &"shamble"
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1439661805]
+shape = SubResource("CapsuleShape2D_hu15b")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=142169760]
+target_position = Vector2(100, 0)
