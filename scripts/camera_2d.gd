@@ -1,8 +1,8 @@
 extends Camera2D
 
-@export var max_offset := 100.0
+@export var max_offset := 50.0
 @export var smoothing := 5.0
-@export var deadzone_radius := 50.0
+@export var deadzone_radius := 150.0
 
 func _process(delta):
 	var screen_center = get_viewport_rect().size * 0.5

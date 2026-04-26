@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ipcmevonufya" path="res://assets/gun.png" id="1_wtcfe"]
 [ext_resource type="Texture2D" uid="uid://bc6oujuc3gdk7" path="res://assets/gun-Sheet-export.png" id="2_f2232"]
+[ext_resource type="Script" uid="uid://cd1v6lra7gmqm" path="res://scripts/gun.gd" id="3_2gu6j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2gu6j"]
 atlas = ExtResource("1_wtcfe")
@@ -62,3 +63,4 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_pr6x7")
 animation = &"idle"
 autoplay = "idle"
+script = ExtResource("3_2gu6j")
