@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 const SPEED = 50
 
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+
 var direction := 0
 var state := "idle"
 var state_timer := 0.0
@@ -24,7 +26,11 @@ func _physics_process(delta: float) -> void:
 
 	elif state == "walk":
 		move(direction)
-#TODO make zomie face correct way
+
+		# Flip zombie
+		if direction != 0:
+			sprite.flip_h = direction < 0
+
 		if state_timer <= 0:
 			_pick_idle()
 
@@ -45,4 +51,4 @@ func _pick_idle():
 func _pick_walk():
 	state = "walk"
 	direction = [-1, 1].pick_random()
-	state_timer = randf_range(1.5, 3.0) # how long it walks
+	state_timer = randf_range(1.5, 3.0)
