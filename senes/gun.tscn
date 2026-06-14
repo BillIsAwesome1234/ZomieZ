@@ -68,3 +68,12 @@ frame_progress = 0.62598157
 script = ExtResource("3_2gu6j")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=976277007]
+visible = false
+target_position = Vector2(100, 0)
+
+[node name="Line2D" type="Line2D" parent="." unique_id=595702531]
+visible = false
+position = Vector2(6, -2)
+points = PackedVector2Array(0, 0, 79, 0)
+width = 1.0
+default_color = Color(1, 1, 0.627451, 0.9372549)
