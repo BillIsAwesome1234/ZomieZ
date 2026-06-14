@@ -60,16 +60,16 @@ animations = [{
 }]
 
 [node name="gun" type="AnimatedSprite2D" unique_id=1521681469]
+position = Vector2(7, -3)
 sprite_frames = SubResource("SpriteFrames_pr6x7")
-animation = &"shoot"
+animation = &"idle"
 autoplay = "idle"
-frame = 4
-frame_progress = 0.62598157
+offset = Vector2(-7, 3)
 script = ExtResource("3_2gu6j")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=976277007]
 visible = false
-target_position = Vector2(100, 0)
+target_position = Vector2(300, 0)
 
 [node name="Line2D" type="Line2D" parent="." unique_id=595702531]
 visible = false
